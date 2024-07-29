@@ -1,0 +1,169 @@
+body {
+  display: grid;
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+.super {
+  display: flex;
+  gap: 20px;
+  max-width: 1440px;
+}
+.main {
+  display: grid;
+  justify-content: left;
+  min-width: 200px;
+  min-height: 500px;
+  background-color: white;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 8%;
+  font-family: "Roboto Condensed", sans-serif;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+li {
+  display: grid;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+.sale {
+  position: relative;
+  font-size: 25px;
+  padding-left: 50px;
+  margin: 0px;
+  width: 190px;
+}
+.sale > li:nth-child(n + 2) {
+  opacity: 0.5;
+}
+
+.sale > li:nth-child(1)::before {
+  content: "✓";
+  padding-right: 10px;
+  position: absolute;
+  left: 0px;
+  font-weight: bold;
+}
+.sale > li:nth-child(n + 2)::before {
+  content: "✕";
+  padding-right: 10px;
+  position: absolute;
+  left: 0px;
+  opacity: 0.8;
+}
+.sale1 {
+  position: relative;
+  font-size: 25px;
+  padding-left: 50px;
+  margin: 0px;
+  width: 190px;
+}
+.sale1 > li:nth-child(n + 3) {
+  opacity: 0.5;
+}
+
+.sale1 > li:nth-child(n + 1)::before {
+  content: "✓";
+  padding-right: 10px;
+  position: absolute;
+  left: 0px;
+  font-weight: bold;
+}
+.sale1 > li:nth-child(n + 3)::before {
+  content: "✕";
+  padding-right: 10px;
+  position: absolute;
+  left: 0px;
+  opacity: 0.8;
+}
+.sale2 {
+  position: relative;
+  font-size: 25px;
+  padding-left: 50px;
+  margin: 0px;
+  width: 190px;
+}
+.sale2 > li:nth-child(n + 5) {
+  opacity: 0.5;
+}
+
+.sale2 > li:nth-child(n + 1)::before {
+  content: "✓";
+  padding-right: 10px;
+  position: absolute;
+  left: 0px;
+  font-weight: bold;
+}
+.sale2 > li:nth-child(5)::before {
+  content: "✕";
+  padding-right: 10px;
+  position: absolute;
+  left: 0px;
+  opacity: 0.8;
+}
+.sale5 {
+  position: relative;
+  font-size: 25px;
+  padding-left: 50px;
+  margin: 0px;
+  width: 190px;
+}
+
+.sale5 > li:nth-child(n + 1)::before {
+  content: "✓";
+  padding-right: 10px;
+  position: absolute;
+  left: 0px;
+  font-weight: bold;
+}
+
+span {
+  padding-left: 0px;
+  font-weight: 250;
+  padding-bottom: 0px;
+  font-size: 20px;
+}
+.h1a {
+  margin: 0%;
+}
+.butto {
+  padding-top: 20px;
+  display: grid;
+  justify-content: center;
+}
+button {
+  background-color: rgb(123, 19, 234);
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 15px 110px;
+}
+h1 {
+  padding-bottom: 20px;
+}
+.main:hover {
+  transform: scale(1.2);
+  background-color: darkblue;
+  color: white;
+}
+.exp {
+  background-color: white;
+  padding: 5px 10px;
+  color: rgb(206, 69, 206);
+  font-weight: bold;
+  border-radius: 3px;
+}
+.main .exp:hover {
+  background-color: white;
+}
+.main:active {
+  transform: scale(0.9);
+}
